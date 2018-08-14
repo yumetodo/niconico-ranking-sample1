@@ -1,4 +1,7 @@
-﻿(function(){
+﻿// License: Boost Software License 1.0
+// See https://www.boost.org/LICENSE_1_0.txt
+// Copyright © 2018 yumetodo <yume-wikijp@live.jp>
+(function(){
     const endpoint_url = new URL("https://api.search.nicovideo.jp/api/v2/snapshot/video/contents/search");
     const query_args = Object.freeze({
         'q':'初音ミク',
