@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.select_header {
+	background: #fff;
+	padding: 20px 20px;
+	margin: 1px 1px;
+	border: double 1px #0000ff;
+	position: fixed;
+	width: 90%;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu_text {
+	display: flex;
+	padding: 0px 0px;
+}
+
+.menu_item{
+	margin-left: 30px;
+}
+
+.main {
+	width: 900px;
+	margin: 0 auto;
+}
