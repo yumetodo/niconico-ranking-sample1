@@ -38,14 +38,21 @@
             });
         }
         else {
-            const ranking = response["data"].map(d => m("section", [
-                m("p", `${d["contentId"]}`),
+            const ranking = response["data"].map(d => m("section", {"class": "box"}, [
                 m("img", {"src": `https://tn.smilevideo.jp/smile?i=${d["contentId"].slice(2)}`}),
-                m("p", `${d["title"]}`),
-                m("p", `総合${d["viewCounter"] + d["commentCounter"] + 15 * d["mylistCounter"]}`),
-                m("p", `再生${d["viewCounter"]}`),
-                m("p", `マイ${d["mylistCounter"]}`),
-                m("p", `コメ${d["commentCounter"]}`)
+                m("p", {"class": "text"}, `${d["title"]}`),
+                m("div", {"class": "point"}, [
+                    m("p", {"class": "point1"}, [
+                        m("div", {"class": "point2"}, "再生数"),
+                        m("div", {"class": "point3"}, "コメント"),
+                        m("div", {"class": "point3"}, "マイリス")
+                    ]),
+                    m("p", {"class": "point1"}, [
+                        m("div", {"class": "point4"}, `${d["viewCounter"]}`),
+                        m("div", {"class": "point5"}, `${d["mylistCounter"]}`),
+                        m("div", {"class": "point5"}, `${d["commentCounter"]}`)
+                    ])
+                ]),
             ]));
             ready(() => {
                 m.mount(document.getElementById("menu01"), { view: () => ranking});
