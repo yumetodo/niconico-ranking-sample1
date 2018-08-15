@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*
 License: Boost Software License 1.0
 See https://www.boost.org/LICENSE_1_0.txt
@@ -32,6 +32,11 @@ body{
 .main {
   width: 1130px;
   margin: 0 auto;
+}
+
+.menu_content{
+	display: flex;
+	flex-wrap: wrap;
 }
 .box{
   background-color: #fdf5c9;
