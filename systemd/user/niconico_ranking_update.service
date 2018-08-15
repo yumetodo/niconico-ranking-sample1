@@ -1,0 +1,11 @@
+[Unit]
+Description=niconico ranking updater
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/nico_ranking/niconico-ranking-sample1
+ExecStart=/home/nico_ranking/.nvm/versions/node/v10.8.0/bin/node cron.js
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
