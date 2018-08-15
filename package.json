@@ -1,0 +1,26 @@
+{
+  "name": "niconico-ranking-sample1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cron.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumetodo/niconico-ranking-sample1.git"
+  },
+  "author": "yumetodo",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/yumetodo/niconico-ranking-sample1/issues"
+  },
+  "homepage": "https://github.com/yumetodo/niconico-ranking-sample1#readme",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
